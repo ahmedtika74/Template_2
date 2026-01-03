@@ -972,3 +972,231 @@ header .container .form i {
 }
 
 /* End Pricing */
+/* Start Subscibe */
+.subscribe {
+    background-image: url(/images/subscribe.jpg);
+    background-size: cover;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    position: relative;
+}
+
+.subscribe::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--overlay-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.subscribe .container {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+
+
+.subscribe .container form {
+    width: 500px;
+    max-width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.subscribe .container form i {
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    translate: 0 -50%;
+}
+
+.subscribe .container form input:first-of-type,
+.subscribe .container form input:last-of-type {
+    padding: 20px;
+    border: 1px solid white;
+    color: white;
+}
+
+.subscribe .container form input:first-of-type {
+    background-color: transparent;
+    border-right: none;
+    padding-left: 60px;
+    caret-color: var(--main-color);
+    width: calc(100% - 124.2px);
+}
+
+.subscribe .container form input::placeholder {
+    color: white;
+}
+
+.subscribe .container form input:first-of-type:focus {
+    outline: none;
+}
+
+.subscribe .container form input:last-of-type {
+    border-left: none;
+    background-color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.subscribe .container p {
+    line-height: 2;
+    margin-left: 50px;
+    position: relative;
+    display: block;
+}
+
+@media (max-width:767px) {
+    .subscribe .container {
+        flex-direction: column;
+    }
+
+    .subscribe .container p {
+        margin: 30px 0 0 0;
+    }
+}
+
+/* End Subscribe */
+/* Start Contact Us */
+.contact-us {
+    padding-bottom: var(--section-padding);
+}
+
+.contact-us .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-us .content form {
+    flex-basis: 70%;
+    text-align: right;
+}
+
+.contact-us .content form .main-input {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    display: block;
+}
+
+.contact-us .content form .main-input:focus {
+    outline: none;
+}
+
+.contact-us .content form textarea {
+    height: 200px;
+}
+
+.contact-us .content form input[type=submit] {
+    padding: 20px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    text-transform: uppercase;
+}
+
+.contact-us .content .info {
+    flex-basis: 25%;
+}
+
+.contact-us .content .info h4 {
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.contact-us .content .info h4:nth-of-type(2) {
+    margin-top: 90px;
+}
+
+.contact-us .content .info span {
+    margin-bottom: 10px;
+    display: block;
+    color: var(--second-color);
+}
+
+.contact-us .content .info address {
+    color: var(--second-color);
+    line-height: 2;
+}
+
+@media (max-width: 767px) {
+    .contact-us .content {
+        flex-direction: column;
+    }
+
+    .contact-us .content .info {
+        order: -1;
+        text-align: center;
+    }
+
+    .contact-us .content .info h4:nth-of-type(2) {
+        margin-top: 30px;
+    }
+
+    .contact-us .content .info address {
+        margin-bottom: 30px;
+    }
+}
+
+/* End Contact Us */
+
+/* Start Footer */
+footer {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-image: url(/images/subscribe.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+footer::before {
+    content: "";
+    background-color: var(--overlay-color);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+footer .container {
+    position: relative;
+}
+
+footer .container img {
+    margin-bottom: 10px;
+}
+
+footer .container p:not(:last-of-type) {
+    margin: 20px auto;
+    text-transform: uppercase;
+    font-size: 22px;
+    padding: 20px;
+    border-bottom: 1px solid white;
+    width: fit-content;
+}
+
+footer .container .icons {
+    margin-bottom: 50px;
+}
+
+footer .container .icons i {
+    margin: 0 15px;
+}
+
+footer .container span {
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+/* End Footer */
